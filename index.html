@@ -13,12 +13,13 @@
 
 <style>
     body {
+        /* display: flex; */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 0% 10%;
+        padding: 0% 5%;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        background-color: #f5f5f5;
+        /* min-height: 100vh; */
+        background-color: white;
     }
 
     .container {
@@ -29,7 +30,6 @@
     }
 
     .heading {
-        background-color: #3f51b5;
         color: #fff;
         text-align: center;
         padding: 15px;
@@ -75,7 +75,7 @@
     }
 
     .table th {
-        background-color: #3f51b5;
+        background-color: #003b66;
         color: #fff;
         font-weight: 500;
     }
@@ -97,6 +97,8 @@
 
     select {
         border: 1px solid #ccc;
+        background-color: white;
+        color: 0067b2;
         appearance: none;
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
@@ -105,16 +107,17 @@
     }
 
     span {
-        background-color: #3f51b5;
+        background-color: #003b66;
         color: #fff;
     }
 
 
     h1 {
-        text-align: center;
         vertical-align: bottom;
         font-family: 'Montserrat', sans-serif;
-        font-size: 2vw;
+        padding-right: 0px;
+        padding-left: 0px;
+        font-size: 2.5vw;
         margin-bottom: 0.2em;
         margin-top: 0.2em;
         font-weight: 700;
@@ -128,21 +131,15 @@
         font-size: 0;
     }
 
-    @media screen and (max-width: 600px) {
-        h1 {
-            font-size: 17px;
-        }
-
-        .p {
-            font-size: 0;
-        }
-    }
 
     .logout-button {
 
         border-width: 0px;
         border-style: solid;
-        background-color: rgba(154, 162, 164, 0.45);
+        color: black;
+        background-color: white;
+        border-color: #003b66;
+        border-width: 1px;
         border-radius: 35px;
         padding: 10px 20px;
         font-family: 'Montserrat', sans-serif;
@@ -154,7 +151,9 @@
 
         border-width: 0px;
         border-style: solid;
-        background-color: rgba(117, 123, 125, 0.45);
+        border-color: #003b66;
+        border-width: 1px;
+        background-color: rgb(229, 229, 229);
         border-radius: 35px;
         padding: 10px 20px;
         font-family: 'Montserrat', sans-serif;
@@ -162,13 +161,26 @@
         align-items: center;
     }
 
-
+    .total-records-indicator {
+        border-width: 0px;
+        border-style: solid;
+        background-color: #003b66;
+        color: white;
+        height: 20px;
+        width: 80px;
+        border-radius: 35px;
+        padding: 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 
     .search_field {
         display: flex;
         align-items: center;
         position: relative;
-        width: 70%;
+        width: 100%;
     }
 
     .input {
@@ -204,37 +216,99 @@
         height: 18px;
     }
 
-    .logo {
+    .logo-wide-screen {
         display: flex;
+        width: 20%;
+        justify-content: start;
+    }
 
+    .logo-small-screen {
+        display: flex;
+        width: 200px;
         justify-content: center;
+    }
+
+    .header-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: transparent;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .header-spacing {
+        width: 0px;
     }
 
 
     @media screen and (max-width: 600px) {
-        .logo {
-            width: 300px;
+        .logo-wide-screen {
+            margin: 0px;
+            width: 0px;
+        }
+
+        .heading {
+            text-align: left;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-row {
+            justify-content: start;
+
+        }
+
+        .header-spacing {
+            width: 50px
+        }
+
+        .search_field {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .p {
+            font-size: 0;
         }
     }
 
-    */
+    @media screen and (min-width: 600px) {
+        .logo-small-screen {
+            width: 0px;
+        }
+
+    }
 </style>
 
 <body>
 
+    <!-- Logo for small screens -->
     <div class="row">
+        <img class="logo-small-screen" src="logo.png" width="25%"></img>
+    </div>
 
-        <div class="logo" style="width: 25%;height: 100%;">
-            <img src="logo.png" width="80%"></img>
-        </div>
+    <!-- Header -->
+    <div class="header-row" style="justify-content: space-between;">
 
-        <div style="display:flex; width: 50%; height: 100%; justify-content: center; align-items: center;">
+        <img class="logo-wide-screen" src="logo.png" width="25%"></img>
+
+        <div class="heading">
             <h1>
                 Participant Attendance Admin Panel
             </h1>
         </div>
 
-        <div style="display:flex; width: 25%; height: 100%; justify-content: center; align-items: center;">
+        <div class="header-spacing"></div>
+
+        <div style="display:flex; width: 25%; height: 100%; justify-content: end; align-items: center;">
             <div style="width: 100px; height: 100%;">
                 <button class="logout-button">Logout</button>
             </div>
@@ -243,9 +317,8 @@
 
 
     </div>
-    <br>
 
-
+    <!-- Search Bar -->
     <div class="row">
         <div class="search_field">
             <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16">
@@ -257,31 +330,35 @@
         </div>
     </div>
 
+    <div style="height: 5px;"></div>
 
+    <!-- Dropdown and total indicator -->
     <div class="row" style="justify-content: space-between; width: 100%;">
 
-        <div class="container" style="width: 0%;"></div>
+        <!-- <div class="container" style="width: 0%;"></div> -->
 
-        <select name="dropdown" style="width: 70px;">
+        <select name="dropdown" style="width: 150px;">
             <option value="">All</option>
             <option value="field1">Field 1</option>
             <option value="field2">Field 2</option>
             <option value="field3">Field 3</option>
         </select>
 
-        <div class="container" style="width: 0%;"></div>
+        <!-- <div class="container" style="width: 0%;"></div> -->
 
-        <i
-            style="border-radius: 100px;background-color: #3f51b5; width: 100px; height: 50px; align-items: center; border: 0px;;">
-            <p style="font-size: 15px; text-align: center; font-weight:500; color: white;">
-                Total: 234
-            </p>
-        </i>
 
-        <div class="container" style="width: 0%;"></div>
+        <div class="total-records-indicator">
+            Total: 234
+        </div>
+
+
+        <!-- <div class="container" style="width: 0%;"></div> -->
 
     </div>
 
+    <div style="height: 5px;"></div>
+
+    <!-- Query table -->
     <table class="table">
         <thead>
             <tr>
@@ -456,11 +533,11 @@
                 <td><i class="fas fa-check-circle text-success"></i> Present</td>
             </tr>
 
-
-
-
         </tbody>
     </table>
+
+    <!-- Some space at the end -->
+    <div class="container" style="height: 20px;"></div>
 
 </body>
 
