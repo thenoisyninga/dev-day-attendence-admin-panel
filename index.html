@@ -158,9 +158,10 @@
 
         border-width: 0px;
         border-style: solid;
+        color: black;
+        background-color: white;
         border-color: #003b66;
         border-width: 1px;
-        background-color: rgb(229, 229, 229);
         border-radius: 35px;
         padding: 10px 20px;
         font-family: 'Montserrat', sans-serif;
@@ -168,14 +169,32 @@
         align-items: center;
     }
 
+    .logout-button {
+
+        border-width: 0px;
+        border-style: solid;
+        color: white;
+        background-color: #003b66;
+        border-color: #003b66;
+        border-width: 1px;
+        border-radius: 35px;
+        padding: 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+
     .total-records-indicator {
         border-width: 0px;
         border-style: solid;
-        background-color: #003b66;
-        color: white;
+        background-color: white;
+        color: black;
+        border-color: #c2c2c2;
         height: 20px;
         width: 80px;
         border-radius: 35px;
+        border-width: 1px;
         padding: 10px 20px;
         font-family: 'Montserrat', sans-serif;
         justify-content: center;
@@ -248,6 +267,7 @@
     .header-spacing {
         width: 0px;
     }
+
 
 
     @media screen and (max-width: 600px) {
@@ -629,8 +649,9 @@
 
     </table>
 
+
     <!-- Some space at the end -->
-    <div class="container" style="height: 20px;"></div>
+    <div class="container" style="height: 25px; padding: 0px;"></div>
 
 </body>
 
