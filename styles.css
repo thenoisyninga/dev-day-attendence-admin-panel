@@ -299,7 +299,7 @@ h1 {
     width: 100%;
 }
 
-.input-attendance-search {
+.input-schedule-search {
     font-size: 18px;
     padding: 5px 10px;
     height: 30px;
@@ -314,17 +314,17 @@ h1 {
     transition: .3s ease;
 }
 
-.input-attendance-search:focus {
+.input-schedule-search:focus {
     background: #F2F2F2;
     border: 1px solid #A5A5A5;
 }
 
-.input-attendance-search::placeholder {
+.input-schedule-search::placeholder {
     color: #727272;
 }
 
 
-.input-schedule-search {
+.input-attendance-search {
     font-size: 18px;
     padding: 5px 10px;
     height: 30px;
@@ -340,12 +340,12 @@ h1 {
     transition: .3s ease;
 }
 
-.input-schedule-search:focus {
+.input-attendance-search:focus {
     background: #F2F2F2;
     border: 1px solid #A5A5A5;
 }
 
-.input-schedule-search::placeholder {
+.input-attendance-search::placeholder {
     color: #727272;
 }
 
