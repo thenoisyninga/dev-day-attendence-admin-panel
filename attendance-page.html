@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Panel - Dev Day '24</title>
+    <!-- Importing the Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/yourkit.js"></script>
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Added Nav Bar -->
+    <div class="row"
+        style="background-color: #e1e1e1; width: 70%; padding: 5px; margin: 10px 15%; border-color: yellow; border-width: 1%x; border-radius: 100px;">
+        <ul>
+            <li class="attendance-toggle"><a class="active">Attendance</a></li>
+            <li class="time-schedule-toggle"><a href="timings-page.html">Time Schedule</a></li>
+        </ul>
+    </div>
+
+    <!-- Logo for small screens -->
+    <div class="row">
+        <img class="logo-small-screen" src="logo.png" width="25%"></img>
+    </div>
+
+    <!-- Header -->
+    <div class="header-row" style="justify-content: space-between;">
+
+        <img class="logo-wide-screen" src="logo.png" width="25%"></img>
+
+        <div class="heading">
+            <h1>
+                Participant Attendance Admin Panel
+            </h1>
+        </div>
+
+        <div class="header-spacing"></div>
+
+        <div style="display:flex; width: 25%; height: 100%; justify-content: end; align-items: center;">
+            <div style="width: 100px; height: 100%;">
+                <button class="logout-button">Logout</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Search Bar -->
+    <div class="row">
+        <div class="search_field">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+            </svg>
+            <input class="input" type="text" placeholder="Search">
+        </div>
+    </div>
+
+    <div style="height: 5px;"></div>
+
+    <!-- Dropdown and total indicator -->
+    <div class="row" style="justify-content: space-between; width: 100%;">
+
+        <!-- <div class="container" style="width: 0%;"></div> -->
+
+        <select name="dropdown" style="width: 150px;">
+            <option value="">All</option>
+            <option value="field1">Field 1</option>
+            <option value="field2">Field 2</option>
+            <option value="field3">Field 3</option>
+        </select>
+
+        <!-- <div class="container" style="width: 0%;"></div> -->
+
+
+        <div class="total-records-indicator">
+            Total: 234
+        </div>
+
+
+        <!-- <div class="container" style="width: 0%;"></div> -->
+
+    </div>
+
+    <div style="height: 5px;"></div>
+
+    <!-- Center and collapsed the table -->
+
+    <!-- Query table -->
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Status</th>
+                    <th>Competition</th>
+                    <th>Member 1</th>
+                    <th>Member 2</th>
+                    <th>Member 3</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Sarim Ahmed</td>
+                    <td><i class="fas fa-check-circle text-success"></i>
+                        <select name="attendance-dropdown" style="width: 110px;">
+                            <option value="absent">Absent</option>
+                            <option value="present">Present</option>
+                        </select>
+                    </td>
+                    <td>App Development</td>
+                    <td>App Development</td>
+                    <td>App Development</td>
+                    <td>App Development</td>
+
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

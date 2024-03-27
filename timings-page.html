@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Panel - Dev Day '24</title>
+    <!-- Importing the Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/yourkit.js"></script>
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <div class="row"
+        style="background-color: #e1e1e1; width: 70%; padding: 5px; margin: 10px 15%; border-color: yellow; border-width: 1%x; border-radius: 100px;">
+        <ul>
+            <li class="attendance-toggle"><a href="attendance-page.html">Attendance</a></li>
+            <li class="time-schedule-toggle"><a class="active">Time Schedule</a></li>
+        </ul>
+    </div>
+
+    <!-- Logo for small screens -->
+    <div class="row">
+        <img class="logo-small-screen" src="logo.png" width="25%"></img>
+    </div>
+
+    <!-- Header -->
+    <div class="header-row" style="justify-content: space-between;">
+
+        <img class="logo-wide-screen" src="logo.png" width="25%"></img>
+
+        <div class="heading">
+            <h1>
+                Time Schedule Admin Panel
+            </h1>
+        </div>
+
+        <div style="display:flex; width: 25%; height: 100%; justify-content: end; align-items: center;">
+
+            <div style="width: 100px; height: 100%;">
+                <button class="logout-button">Logout</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Search Bar -->
+    <div class="row">
+        <div class="search_field">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+            </svg>
+            <input class="input" type="text" placeholder="Search">
+        </div>
+    </div>
+
+    <div style="height: 50px;"></div>
+
+    <!-- Query table -->
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Competition Name</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Competition 1</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <button>
+                            Change
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Competition 2</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <button>
+                            Change
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Competition 3</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <button>
+                            Change
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Competition 4</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <button>
+                            Change
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Competition 5</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <button>
+                            Change
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Competition 6</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <button>
+                            Change
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Competition 7</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                    <td>
+                        <button>
+                            Change
+                        </button>
+                    </td>
+                </tr>
+
+
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
