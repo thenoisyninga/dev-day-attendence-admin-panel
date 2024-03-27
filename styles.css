@@ -16,6 +16,19 @@ ul {
     padding: 0;
 }
 
+.navigator-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #e1e1e1;
+    width: 70%;
+    padding: 5px;
+    margin: 10px 15%;
+    border-radius: 100px;
+}
 
 a {
     border-radius: 100px;
@@ -256,61 +269,35 @@ h1 {
     align-items: center;
 }
 
-.svg_icon {
-    /* position: absolute; */
-    left: 10px;
-    fill: #707070;
-    width: 5%;
-    height: 18px;
-}
-
-.search-bar {
+.search_field {
     display: flex;
-    margin: 0 auto;
-    border: 1px solid black;
-    width: 65%;
+    align-items: center;
+    position: relative;
+    width: 100%;
 }
 
 .search-dropdown {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 20%;
+    width: 300px;
     font-size: 16px;
+    appearance: none;
     margin-right: 5px;
-}
-
-.search-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 70%;
-    font-size: 16px;
 }
 
 .search-button {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: #003b66;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    width: 10%;
-}
-
-.search-input:focus + .search-button {
-    background-color: #3e8e41;
-}
-
-/* .search_field {
-    display: flex;
-    align-items: center;
-    position: relative;
     width: 100%;
-} */
+}
 
-/* .input {
+.input {
     font-size: 18px;
     padding: 5px 10px;
     height: 30px;
@@ -320,21 +307,29 @@ h1 {
     background: #FFFFFF;
     color: #000000;
     border: 1px solid #C4D1EB;
-    border-radius: 18px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     box-shadow: 3px 3px 2px 0px #E2E2E2;
     transition: .3s ease;
-} */
+}
 
-/* .input:focus {
+.input:focus {
     background: #F2F2F2;
     border: 1px solid #A5A5A5;
     border-radius: 18px;
-} */
+}
 
-/* .input::placeholder {
+.input::placeholder {
     color: #727272;
-} */
+}
 
+.svg_icon {
+    position: absolute;
+    left: 10px;
+    fill: #707070;
+    width: 18px;
+    height: 18px;
+}
 
 .logo-wide-screen {
     display: flex;
@@ -406,10 +401,27 @@ h1 {
     table {
         height: 45vh;
     }
+
+    .navigator-wrapper {
+        width: 95%;
+        margin: auto;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
     .logo-small-screen {
         width: 0px;
     }
+
+
+    .search_field {
+        width: 80%;
+    }
+
+
+    .search-button {
+        width: 80%;
+    }
+
 }

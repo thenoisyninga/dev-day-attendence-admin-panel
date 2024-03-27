@@ -13,9 +13,10 @@
 
 <body>
 
+    <div style="height: 10px;"></div>
+
     <!-- Added Nav Bar -->
-    <div class="row"
-        style="background-color: #e1e1e1; width: 70%; padding: 5px; margin: 10px 15%; border-color: yellow; border-width: 1%x; border-radius: 100px;">
+    <div class="navigator-wrapper">
         <ul>
             <li class="attendance-toggle"><a class="active">Attendance</a></li>
             <li class="time-schedule-toggle"><a href="timings-page.html">Time Schedule</a></li>
@@ -50,6 +51,8 @@
 
     </div>
 
+    <div style="height: 25px;"></div>
+
     <!-- Search Bar -->
     <div class="row">
         <div class="search_field">
@@ -62,31 +65,39 @@
         </div>
     </div>
 
-    <div style="height: 5px;"></div>
+
+    <!-- Search Button -->
+    <div class="row">
+        <button type="submit" class="search-button">Search</button>
+    </div>
+
 
     <!-- Dropdown and total indicator -->
-    <div class="row" style="justify-content: space-between; width: 100%;">
+    <div class="row">
+        <div class="row" style="justify-content: space-between; width: 80%;">
 
-        <!-- <div class="container" style="width: 0%;"></div> -->
+            <!-- <div class="container" style="width: 0%;"></div> -->
 
-        <select name="dropdown" style="width: 150px;">
-            <option value="">All</option>
-            <option value="field1">Field 1</option>
-            <option value="field2">Field 2</option>
-            <option value="field3">Field 3</option>
-        </select>
+            <select name="dropdown" style="width: 150px;">
+                <option value="">All</option>
+                <option value="field1">Field 1</option>
+                <option value="field2">Field 2</option>
+                <option value="field3">Field 3</option>
+            </select>
 
-        <!-- <div class="container" style="width: 0%;"></div> -->
+            <!-- <div class="container" style="width: 0%;"></div> -->
 
 
-        <div class="total-records-indicator">
-            Total: 234
+            <div class="total-records-indicator">
+                Total: 234
+            </div>
+
+
+            <!-- <div class="container" style="width: 0%;"></div> -->
+
         </div>
-
-
-        <!-- <div class="container" style="width: 0%;"></div> -->
-
     </div>
+
 
     <div style="height: 5px;"></div>
 

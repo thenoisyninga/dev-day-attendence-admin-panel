@@ -13,9 +13,11 @@
 
 <body>
 
+    <div style="height: 10px;"></div>
+
+
     <!-- Nav Bar -->
-    <div class="row"
-        style="background-color: #e1e1e1; width: 70%; padding: 5px; margin: 10px 15%; border-color: yellow; border-width: 1%x; border-radius: 100px;">
+    <div class="navigator-wrapper">
         <ul>
             <li class="attendance-toggle"><a href="index.html">Attendance</a></li>
             <li class="time-schedule-toggle"><a class="active">Time Schedule</a></li>
@@ -63,19 +65,26 @@
 
     <div style="height: 50px;"></div> -->
 
-    <div class="search-bar">
-        <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16">
-            <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
-            </path>
-        </svg>
-        <input type="text" class="search-input">
-        <select class="search-dropdown">
-          <option value="">All Competitions</option>
-          <option value="category1">Competition 1</option>
-          <option value="category2">Competition 2</option>
-          <option value="category3">Competition 3</option>
-        </select>
+    <div class="row">
+        <div class="search_field">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+            </svg>
+            <input type="text" class="input">
+            <select class="search-dropdown">
+                <option value="">All Competitions</option>
+                <option value="category1">Competition 1</option>
+                <option value="category2">Competition 2</option>
+                <option value="category3">Competition 3</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- Search Button -->
+    <div class="row">
         <button type="submit" class="search-button">Search</button>
     </div>
 
