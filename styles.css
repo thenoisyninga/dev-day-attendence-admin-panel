@@ -207,8 +207,6 @@ h1 {
 
 
 .logout-button {
-
-
     border-width: 0px;
     border-style: solid;
     color: black;
@@ -223,7 +221,6 @@ h1 {
 }
 
 .logout-button:hover {
-
     border-width: 0px;
     border-style: solid;
     color: black;
@@ -238,7 +235,6 @@ h1 {
 }
 
 .logout-button {
-
     border-width: 0px;
     border-style: solid;
     color: white;
@@ -272,13 +268,12 @@ h1 {
 
 .search_field {
     display: flex;
-
     align-items: center;
     position: relative;
     width: 100%;
 }
 
-.search-dropdown {
+/* .search-dropdown {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -286,6 +281,18 @@ h1 {
     font-size: 16px;
     appearance: none;
     margin-right: 5px;
+} */
+
+.retrieve-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #003b66;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 300px;
+    appearance: none;
 }
 
 .search-button {
