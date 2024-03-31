@@ -102,6 +102,7 @@ li {
     margin-bottom: 10px;
 }
 
+
 .table-container {
     display: flex;
     justify-content: center;
@@ -296,6 +297,16 @@ h1 {
     appearance: none;
 }
 
+.search-details-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .retrieve-all-button {
     padding: 10px;
     border: 1px solid #ccc;
@@ -304,7 +315,7 @@ h1 {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    width: 80%;
+    width: 200px;
 }
 
 .search-button {
@@ -452,6 +463,10 @@ h1 {
         margin: auto;
     }
 
+    .search-details-row {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -469,4 +484,8 @@ h1 {
         width: 80%;
     }
 
+
+    .search-details-row {
+        width: 80%;
+    }
 }
