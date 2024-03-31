@@ -279,6 +279,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 0px;
     width: 300px;
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
     font-size: 16px;
     appearance: none;
 }
@@ -293,6 +294,7 @@ h1 {
     border-bottom-right-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
     width: 300px;
     appearance: none;
 }
