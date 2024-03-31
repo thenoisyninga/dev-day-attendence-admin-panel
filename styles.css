@@ -273,17 +273,17 @@ h1 {
     width: 100%;
 }
 
-/* .search-dropdown {
-    padding: 10px;
+.search-dropdown {
+    padding: 9px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0px;
     width: 300px;
     font-size: 16px;
     appearance: none;
-    margin-right: 5px;
-} */
+}
 
-.retrieve-button {
+.search-attendance-page {
+    display: block;
     padding: 9px;
     border: 1px solid #ccc;
     background-color: #003b66;
@@ -294,6 +294,17 @@ h1 {
     cursor: pointer;
     width: 300px;
     appearance: none;
+}
+
+.retrieve-all-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #003b66;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
 }
 
 .search-button {
