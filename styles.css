@@ -284,11 +284,12 @@ h1 {
 } */
 
 .retrieve-button {
-    padding: 10px;
+    padding: 9px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     background-color: #003b66;
     color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     width: 300px;
