@@ -342,7 +342,6 @@ h1 {
     color: #000000;
     border: 1px solid #C4D1EB;
     border-radius: 10px;
-    box-shadow: 3px 3px 2px 0px #E2E2E2;
     transition: .3s ease;
 }
 
@@ -467,6 +466,14 @@ h1 {
 
     .search-details-row {
         width: 100%;
+    }
+
+    .search-dropdown {
+        width: 30%;
+    }
+
+    .search-attendance-page {
+        width: 30%;
     }
 
 }
